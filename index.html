@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pudú Tecnología - El POS Moderno y Versátil</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "outline": "#817286",
+              "surface-bright": "#fff7fc",
+              "on-primary-fixed": "#30004a",
+              "tertiary": "#774800",
+              "surface-container-highest": "#ecdeee",
+              "primary-container": "#f5d9ff",
+              "inverse-surface": "#362d39",
+              "on-tertiary-fixed": "#2b1700",
+              "surface": "#ffffff",
+              "on-surface-variant": "#4f4254",
+              "on-secondary-fixed-variant": "#67278c",
+              "tertiary-fixed-dim": "#ffb866",
+              "primary": "#a413ec",
+              "secondary": "#8141a6",
+              "surface-container-high": "#f2e4f4",
+              "on-secondary-container": "#632388",
+              "background": "#ffffff",
+              "on-primary-fixed-variant": "#7100a6",
+              "on-background": "#201924",
+              "on-error": "#ffffff",
+              "secondary-container": "#da95ff",
+              "surface-container-low": "#feefff",
+              "inverse-primary": "#e6b4ff",
+              "secondary-fixed": "#f5d9ff",
+              "tertiary-fixed": "#ffddba",
+              "surface-container": "#f8e9f9",
+              "on-tertiary": "#ffffff",
+              "surface-variant": "#ecdeee",
+              "on-secondary-fixed": "#30004a",
+              "tertiary-container": "#ffe8d3",
+              "error-container": "#ffdad6",
+              "on-tertiary-fixed-variant": "#673d00",
+              "secondary-fixed-dim": "#e6b4ff",
+              "surface-tint": "#a413ec",
+              "outline-variant": "#d2c1d7",
+              "on-primary-container": "#30004a",
+              "on-primary": "#ffffff",
+              "surface-dim": "#e4d6e5",
+              "on-error-container": "#93000a",
+              "inverse-on-surface": "#fbecfc",
+              "on-secondary": "#ffffff",
+              "on-tertiary-container": "#2b1700",
+              "error": "#ba1a1a",
+              "surface-container-lowest": "#ffffff",
+              "primary-fixed": "#f5d9ff",
+              "on-surface": "#201924",
+              "primary-fixed-dim": "#e6b4ff"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #ffffff;
+            background-image: radial-gradient(#a413ec 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+            background-attachment: fixed;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(164, 19, 236, 0.1);
+        }
+    </style>
+</head>
+<body class="text-on-background selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md border-b border-purple-100 dark:border-purple-900/50 shadow-sm font-manrope antialiased">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-black tracking-tighter text-purple-700 dark:text-purple-400">Pudú Tecnología</div>
+<div class="hidden md:flex space-x-8">
+<a class="text-purple-700 dark:text-purple-300 font-bold border-b-2 border-purple-600" href="#">Funciones</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-purple-600 dark:hover:text-purple-300 transition-colors duration-200" href="#">Planes</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-purple-600 dark:hover:text-purple-300 transition-colors duration-200" href="#">Contacto</a>
+</div>
+<div class="flex items-center space-x-4">
+<button class="px-4 py-2 text-slate-600 dark:text-slate-400 font-medium hover:text-purple-600 transition-colors duration-200">Iniciar Sesión</button>
+<button class="px-6 py-2 bg-primary text-on-primary rounded-full font-bold hover:opacity-90 transition-opacity">Comenzar</button>
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-6 py-16 md:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="order-2 lg:order-1">
+<div class="inline-flex items-center space-x-2 bg-primary-container px-4 py-1 rounded-full mb-6">
+<span class="material-symbols-outlined text-sm text-on-primary-container">auto_awesome</span>
+<span class="text-xs font-bold text-on-primary-container tracking-wide uppercase">Nueva Versión 2.0</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-extrabold text-on-background tracking-tight leading-[1.1] mb-6">
+                    Optimiza tu Negocio con <span class="text-primary">Pudú</span>
+</h1>
+<p class="text-xl text-on-surface-variant mb-10 max-w-xl leading-relaxed">
+                    El sistema POS más versátil del mercado. Gestiona ventas, inventarios y atención al cliente desde una sola plataforma intuitiva y potente.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="px-8 py-4 bg-primary text-on-primary rounded-full font-bold text-lg shadow-lg shadow-primary/25 hover:scale-105 transition-transform">
+                        Empieza Gratis
+                    </button>
+<button class="px-8 py-4 bg-surface border-2 border-outline-variant text-on-surface rounded-full font-bold text-lg hover:bg-surface-container transition-colors">
+                        Ver Demo
+                    </button>
+</div>
+</div>
+<div class="order-1 lg:order-2 flex justify-center">
+<div class="relative group">
+<div class="absolute inset-0 bg-primary/20 blur-3xl rounded-full -z-10 group-hover:bg-primary/30 transition-colors"></div>
+<img class="w-64 h-64 md:w-96 md:h-96 object-contain drop-shadow-2xl hover:rotate-3 transition-transform duration-500" data-alt="Modern geometric logo of Pudú Tecnología with purple accents and professional sleek lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAptwsgeIWos-ikeHby4_VhlCsc5GoqVF-QWS3u7fnQ-gCF09BrWFSth14JJuuZ87GtSBbo84RaRw-AelnXbp1-RcWWPaA7Hg21QwZXCwpNsWtB8kXE5JOdiHu6EJh0qAgvqhrFf-NUa81-bFMzuaIM_2Axu3T2AVWB9IxX2pc-T5LCpaVZRh6CFP89bR2Ql-imvwWK6QrY2INpcy74S_A-4TAkAOeCNi2lev9I1OziC6RYgOu9lt__cVmeba_Qpc6q0E4xT-Dvr3zI"/>
+</div>
+</div>
+</section>
+<!-- Product Preview (Image integration) -->
+<section class="max-w-7xl mx-auto px-6 py-12">
+<div class="rounded-xl overflow-hidden shadow-2xl border border-outline-variant/30">
+<img class="w-full aspect-video object-cover" data-alt="User interface of a modern point of sale system showing inventory tiles, colorful table layouts, and a sleek payment dashboard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXGri3cbfEF3d-_aUSAb8Tw5tuT_E7NnCcTVSjE09QJmRpOCqc4UFFlkUYzDTRvvCayACYDgs6asdTVsT4TAmpIajQJWwhdLFSfiRMQy5RJXu37T9fqCVggUMVf6XEPHuJVV7K-fallxt4UFzsWLMeTpv_irzo0woeA-bILhzVVnN_M7p9EvW_qMIaD79TuBKhFdFDnXiUIfWV4sHy4fFC9p4pSEw_m8Pf88CPqcriUG1CNw-1KYJamGBwU9wh7Akk13sMdSaJ6g6o"/>
+</div>
+</section>
+<!-- Funciones (Bento Grid Style) -->
+<section class="max-w-7xl mx-auto px-6 py-24">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-extrabold tracking-tight mb-4">Todo lo que necesitas para crecer</h2>
+<div class="h-1.5 w-24 bg-primary mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- POS -->
+<div class="glass-card p-8 rounded-lg flex flex-col items-start hover:translate-y-[-8px] transition-transform duration-300">
+<div class="w-14 h-14 bg-primary-container rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">point_of_sale</span>
+</div>
+<h3 class="text-2xl font-bold mb-3">Punto de Venta</h3>
+<p class="text-on-surface-variant leading-relaxed">Vende más rápido con una interfaz optimizada para pantallas táctiles. Procesamiento de pagos en segundos.</p>
+</div>
+<!-- Inventario -->
+<div class="glass-card p-8 rounded-lg flex flex-col items-start hover:translate-y-[-8px] transition-transform duration-300">
+<div class="w-14 h-14 bg-secondary-container rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-secondary text-3xl">inventory_2</span>
+</div>
+<h3 class="text-2xl font-bold mb-3">Gestión de Inventario</h3>
+<p class="text-on-surface-variant leading-relaxed">Controla tu stock en tiempo real. Alertas de bajo inventario y reportes automáticos de reposición.</p>
+</div>
+<!-- Plano de Mesas -->
+<div class="glass-card p-8 rounded-lg flex flex-col items-start hover:translate-y-[-8px] transition-transform duration-300">
+<div class="w-14 h-14 bg-tertiary-container rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-tertiary text-3xl">table_bar</span>
+</div>
+<h3 class="text-2xl font-bold mb-3">Plano de Mesas</h3>
+<p class="text-on-surface-variant leading-relaxed">Diseña el mapa de tu restaurante de forma interactiva. Gestiona pedidos por mesa con total facilidad.</p>
+</div>
+</div>
+</section>
+<!-- Secondary Product View -->
+<section class="bg-surface-container py-24">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="order-2 lg:order-1 relative">
+<img class="rounded-lg shadow-2xl" data-alt="High quality shot of a tablet and credit card reader on a cafe counter displaying a modern sales interface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4C7ls4OuM46Ord-BPE2KL0gkJDqhQRET0ZDADeXwDEZrIJb294Wn4wOHYux6_dpIn7irJS-tXw0-cO-yDDgxRxvyiddSwcdGgSgJ_AR4gY1YLAkZvMAC97-mHNqrTZzpqRyCMAXOmPR3u_WKPwYd-BJYPuWPyJuafwhGKRViHlRVhPo5tC8rA8UFzvdZ4EXS7jIi8zqcNSFfDolt3Zve0wg1fiijbwCJD_84g38XGJxCeFSxW-8TqH9-TrkAFr7lnXPbx7NnEZEJ-"/>
+<div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-lg shadow-xl hidden md:block">
+<div class="flex items-center space-x-4">
+<div class="w-12 h-12 bg-green-100 text-green-600 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">trending_up</span>
+</div>
+<div>
+<p class="text-sm font-bold text-on-surface">+24% Ventas</p>
+<p class="text-xs text-on-surface-variant">Este mes vs anterior</p>
+</div>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<h2 class="text-4xl font-extrabold mb-6 tracking-tight">Diseñado para la eficiencia operativa</h2>
+<p class="text-lg text-on-surface-variant mb-8">Pudú Tecnología no es solo un software, es el corazón de tu operación. Reduce tiempos de espera y elimina errores humanos.</p>
+<ul class="space-y-4">
+<li class="flex items-center space-x-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-medium">Sincronización multi-dispositivo</span>
+</li>
+<li class="flex items-center space-x-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-medium">Reportes fiscales configurables</span>
+</li>
+<li class="flex items-center space-x-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-medium">Modo Offline garantizado</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Planes de Suscripción -->
+<section class="max-w-7xl mx-auto px-6 py-24">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-extrabold tracking-tight mb-4">Planes para cada etapa</h2>
+<p class="text-on-surface-variant">Escala tu negocio con la tecnología correcta.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Emprendedor -->
+<div class="bg-white p-10 rounded-lg border border-outline-variant flex flex-col h-full shadow-sm">
+<h3 class="text-xl font-bold mb-2">Emprendedor</h3>
+<div class="flex items-baseline mb-6">
+<span class="text-4xl font-black">$0</span>
+<span class="text-on-surface-variant ml-1">/mes</span>
+</div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center text-sm text-on-surface-variant"><span class="material-symbols-outlined text-primary mr-2 text-lg">check</span> Hasta 50 ventas/día</li>
+<li class="flex items-center text-sm text-on-surface-variant"><span class="material-symbols-outlined text-primary mr-2 text-lg">check</span> Inventario básico</li>
+<li class="flex items-center text-sm text-on-surface-variant"><span class="material-symbols-outlined text-primary mr-2 text-lg">check</span> 1 Usuario</li>
+</ul>
+<button class="w-full py-3 border-2 border-primary text-primary rounded-full font-bold hover:bg-primary-container transition-colors">Empezar Ahora</button>
+</div>
+<!-- Negocio -->
+<div class="bg-primary p-10 rounded-lg border-4 border-primary-container flex flex-col h-full shadow-2xl relative transform scale-105 z-10">
+<div class="absolute top-0 right-10 -translate-y-1/2 bg-on-primary-fixed text-on-primary-fixed-variant px-4 py-1 rounded-full text-xs font-black uppercase tracking-widest border border-primary-container">Popular</div>
+<h3 class="text-xl font-bold mb-2 text-on-primary">Negocio</h3>
+<div class="flex items-baseline mb-6">
+<span class="text-4xl font-black text-on-primary">$29</span>
+<span class="text-primary-container ml-1">/mes</span>
+</div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center text-sm text-on-primary"><span class="material-symbols-outlined text-primary-container mr-2 text-lg">check</span> Ventas ilimitadas</li>
+<li class="flex items-center text-sm text-on-primary"><span class="material-symbols-outlined text-primary-container mr-2 text-lg">check</span> Plano de mesas interactivo</li>
+<li class="flex items-center text-sm text-on-primary"><span class="material-symbols-outlined text-primary-container mr-2 text-lg">check</span> Gestión multi-almacén</li>
+<li class="flex items-center text-sm text-on-primary"><span class="material-symbols-outlined text-primary-container mr-2 text-lg">check</span> Usuarios ilimitados</li>
+</ul>
+<button class="w-full py-3 bg-on-primary text-primary rounded-full font-bold shadow-lg">Elegir Plan</button>
+</div>
+<!-- Empresa -->
+<div class="bg-white p-10 rounded-lg border border-outline-variant flex flex-col h-full shadow-sm">
+<h3 class="text-xl font-bold mb-2">Empresa</h3>
+<div class="flex items-baseline mb-6">
+<span class="text-3xl font-black">Personalizado</span>
+</div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center text-sm text-on-surface-variant"><span class="material-symbols-outlined text-primary mr-2 text-lg">check</span> Todo en Plan Negocio</li>
+<li class="flex items-center text-sm text-on-surface-variant"><span class="material-symbols-outlined text-primary mr-2 text-lg">check</span> Integraciones API</li>
+<li class="flex items-center text-sm text-on-surface-variant"><span class="material-symbols-outlined text-primary mr-2 text-lg">check</span> Soporte 24/7 VIP</li>
+<li class="flex items-center text-sm text-on-surface-variant"><span class="material-symbols-outlined text-primary mr-2 text-lg">check</span> Formación presencial</li>
+</ul>
+<button class="w-full py-3 border-2 border-outline text-on-surface rounded-full font-bold hover:bg-surface-container transition-colors">Contactar Ventas</button>
+</div>
+</div>
+</section>
+<!-- Testimonios -->
+<section class="max-w-7xl mx-auto px-6 py-24 border-t border-outline-variant/20">
+<h2 class="text-3xl font-extrabold text-center mb-16 tracking-tight">Lo que dicen nuestros clientes</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-surface-container-low p-8 rounded-lg">
+<div class="flex text-primary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="italic text-on-surface mb-6 text-lg">"Pudú cambió por completo la forma en que gestionamos las reservas de nuestro bistró. El plano de mesas es increíblemente intuitivo."</p>
+<div class="flex items-center space-x-3">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center font-bold text-primary">RM</div>
+<div>
+<p class="font-bold text-sm">Ricardo Méndez</p>
+<p class="text-xs text-on-surface-variant">Dueño de 'La Table'</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-8 rounded-lg">
+<div class="flex text-primary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="italic text-on-surface mb-6 text-lg">"La gestión de inventario en tiempo real nos ha ahorrado miles de dólares en mermas y productos vencidos."</p>
+<div class="flex items-center space-x-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center font-bold text-secondary">CS</div>
+<div>
+<p class="font-bold text-sm">Carla Soto</p>
+<p class="text-xs text-on-surface-variant">Gerente de Retail</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-8 rounded-lg md:col-span-2 lg:col-span-1">
+<div class="flex text-primary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+<p class="italic text-on-surface mb-6 text-lg">"Sencillo de usar. Mis meseros aprendieron a usarlo en 10 minutos. Es la herramienta definitiva para POS."</p>
+<div class="flex items-center space-x-3">
+<div class="w-10 h-10 rounded-full bg-tertiary-container flex items-center justify-center font-bold text-tertiary">JP</div>
+<div>
+<p class="font-bold text-sm">Juan Pablo</p>
+<p class="text-xs text-on-surface-variant">Café del Parque</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Final -->
+<section class="max-w-7xl mx-auto px-6 py-24 mb-12">
+<div class="bg-on-primary-fixed rounded-lg p-12 text-center relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(#ffffff 0.5px, transparent 0.5px); background-size: 20px 20px;"></div>
+<h2 class="text-4xl font-extrabold text-white mb-6 relative z-10">¿Listo para transformar tu negocio?</h2>
+<p class="text-primary-fixed text-lg mb-10 max-w-2xl mx-auto relative z-10">Únete a cientos de empresas que ya confían en Pudú Tecnología para potenciar sus operaciones diarias.</p>
+<div class="relative z-10">
+<button class="px-10 py-4 bg-primary text-on-primary rounded-full font-black text-xl hover:scale-105 transition-transform shadow-2xl">Empezar ahora gratis</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-900 border-t border-purple-100 dark:border-purple-900/30 w-full py-12 font-manrope text-sm">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto gap-8">
+<div class="flex flex-col items-center md:items-start space-y-4">
+<div class="text-lg font-bold text-purple-700 dark:text-purple-400">Pudú Tecnología</div>
+<p class="text-slate-500 dark:text-slate-400 text-center md:text-left max-w-xs">Elevando el estándar de la gestión comercial en Latinoamérica.</p>
+<div class="flex space-x-4">
+<a class="w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 hover:bg-purple-600 hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-base">share</span>
+</a>
+<a class="w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 hover:bg-purple-600 hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-base">public</span>
+</a>
+</div>
+</div>
+<div class="flex flex-wrap justify-center gap-8 md:gap-16">
+<div class="flex flex-col space-y-3">
+<span class="font-bold text-slate-800 dark:text-slate-200 uppercase tracking-widest text-xs">Recursos</span>
+<a class="text-slate-500 dark:text-slate-400 hover:text-purple-500 underline transition-all" href="#">Soporte</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-purple-500 underline transition-all" href="#">Ventas</a>
+</div>
+<div class="flex flex-col space-y-3">
+<span class="font-bold text-slate-800 dark:text-slate-200 uppercase tracking-widest text-xs">Legal</span>
+<a class="text-slate-500 dark:text-slate-400 hover:text-purple-500 underline transition-all" href="#">Privacidad</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-purple-500 underline transition-all" href="#">Términos</a>
+</div>
+</div>
+</div>
+<div class="mt-12 text-center text-slate-500 dark:text-slate-400 border-t border-slate-200 dark:border-slate-800 pt-8 px-8">
+            © 2024 Pudú Tecnología. Todos los derechos reservados.
+        </div>
+</footer>
+</body></html>
