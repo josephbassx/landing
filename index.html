@@ -129,14 +129,11 @@
 <div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
 <div class="text-2xl font-black tracking-tighter text-purple-700 dark:text-purple-400">Pudú Tecnología</div>
 <div class="hidden md:flex space-x-8">
-<a class="text-purple-700 dark:text-purple-300 font-bold border-b-2 border-purple-600" href="#">Funciones</a>
-<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-purple-600 dark:hover:text-purple-300 transition-colors duration-200" href="#">Planes</a>
-<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-purple-600 dark:hover:text-purple-300 transition-colors duration-200" href="#">Contacto</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-purple-600 transition-colors duration-200" href="#funciones">Funciones</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-purple-600 dark:hover:text-purple-300 transition-colors duration-200" href="#planes">Planes</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-purple-600 dark:hover:text-purple-300 transition-colors duration-200" href="#contacto">Contacto</a>
 </div>
-<div class="flex items-center space-x-4">
-<button class="px-4 py-2 text-slate-600 dark:text-slate-400 font-medium hover:text-purple-600 transition-colors duration-200">Iniciar Sesión</button>
-<button class="px-6 py-2 bg-primary text-on-primary rounded-full font-bold hover:opacity-90 transition-opacity">Comenzar</button>
-</div>
+<div class="flex items-center space-x-4"><a href="https://rextech.cl/login" class="px-6 py-2 bg-primary text-on-primary rounded-full font-bold hover:opacity-90 transition-opacity">Iniciar Sesión</a></div>
 </div>
 </nav>
 <main class="pt-24">
@@ -175,8 +172,7 @@
 <img id="dashboard-img" class="w-full aspect-video object-cover float-anim" alt="Interfaz del sistema POS Pudú" src="assets/img/dashboard.jpg"/>
 </div>
 </section>
-<!-- Funciones (Bento Grid Style) -->
-<section class="max-w-7xl mx-auto px-6 py-24">
+<!-- Funciones (Bento Grid Style) --><section id="funciones" class="max-w-7xl mx-auto px-6 py-24">
 <div class="text-center mb-16 reveal">
 <h2 class="text-4xl font-extrabold tracking-tight mb-4">Todo lo que necesitas para crecer</h2>
 <div class="h-1.5 w-24 bg-primary mx-auto rounded-full"></div>
@@ -245,8 +241,7 @@
 </div>
 </div>
 </section>
-<!-- Planes de Suscripción -->
-<section class="max-w-7xl mx-auto px-6 py-24">
+<!-- Planes de Suscripción --><section id="planes" class="max-w-7xl mx-auto px-6 py-24">
 <div class="text-center mb-16 reveal">
 <h2 class="text-4xl font-extrabold tracking-tight mb-4">Planes para cada etapa</h2>
 <p class="text-on-surface-variant">Escala tu negocio con la tecnología correcta.</p>
@@ -264,14 +259,14 @@
 <li class="flex items-center text-sm text-on-surface-variant"><span class="material-symbols-outlined text-primary mr-2 text-lg">check</span> Inventario básico</li>
 <li class="flex items-center text-sm text-on-surface-variant"><span class="material-symbols-outlined text-primary mr-2 text-lg">check</span> 1 Usuario</li>
 </ul>
-<button class="w-full py-3 border-2 border-primary text-primary rounded-full font-bold hover:bg-primary-container transition-colors">Empezar Ahora</button>
+<button onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})" class="w-full py-3 border-2 border-primary text-primary rounded-full font-bold hover:bg-primary-container transition-colors">Empezar Ahora</button>
 </div>
 <!-- Negocio -->
 <div class="bg-primary p-10 rounded-lg border-4 border-primary-container flex flex-col h-full shadow-2xl relative transform scale-105 z-10 plan-card popular">
 <div class="absolute top-0 right-10 -translate-y-1/2 bg-on-primary-fixed text-on-primary-fixed-variant px-4 py-1 rounded-full text-xs font-black uppercase tracking-widest border border-primary-container">Popular</div>
 <h3 class="text-xl font-bold mb-2 text-on-primary">Negocio</h3>
 <div class="flex items-baseline mb-6">
-<span class="text-4xl font-black text-on-primary">$29</span>
+<span class="text-4xl font-black text-on-primary">$0</span>
 <span class="text-primary-container ml-1">/mes</span>
 </div>
 <ul class="space-y-4 mb-10 flex-grow">
@@ -280,13 +275,14 @@
 <li class="flex items-center text-sm text-on-primary"><span class="material-symbols-outlined text-primary-container mr-2 text-lg">check</span> Gestión multi-almacén</li>
 <li class="flex items-center text-sm text-on-primary"><span class="material-symbols-outlined text-primary-container mr-2 text-lg">check</span> Usuarios ilimitados</li>
 </ul>
-<button class="w-full py-3 bg-on-primary text-primary rounded-full font-bold shadow-lg">Elegir Plan</button>
+<button onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})" class="w-full py-3 bg-on-primary text-primary rounded-full font-bold shadow-lg hover:opacity-90 transition-opacity">Elegir Plan</button>
 </div>
 <!-- Empresa -->
 <div class="bg-white p-10 rounded-lg border border-outline-variant flex flex-col h-full shadow-sm plan-card reveal">
 <h3 class="text-xl font-bold mb-2">Empresa</h3>
 <div class="flex items-baseline mb-6">
-<span class="text-3xl font-black">Personalizado</span>
+<span class="text-4xl font-black">$0</span>
+<span class="text-on-surface-variant ml-1">/mes</span>
 </div>
 <ul class="space-y-4 mb-10 flex-grow">
 <li class="flex items-center text-sm text-on-surface-variant"><span class="material-symbols-outlined text-primary mr-2 text-lg">check</span> Todo en Plan Negocio</li>
@@ -294,7 +290,7 @@
 <li class="flex items-center text-sm text-on-surface-variant"><span class="material-symbols-outlined text-primary mr-2 text-lg">check</span> Soporte 24/7 VIP</li>
 <li class="flex items-center text-sm text-on-surface-variant"><span class="material-symbols-outlined text-primary mr-2 text-lg">check</span> Formación presencial</li>
 </ul>
-<button class="w-full py-3 border-2 border-outline text-on-surface rounded-full font-bold hover:bg-surface-container transition-colors">Contactar Ventas</button>
+<button onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})" class="w-full py-3 border-2 border-outline text-on-surface rounded-full font-bold hover:bg-surface-container transition-colors">Contactar Ventas</button>
 </div>
 </div>
 </section>
@@ -355,15 +351,74 @@
 </div>
 </div>
 </section>
-<!-- CTA Final -->
-<section class="max-w-7xl mx-auto px-6 py-24 mb-12">
-<div class="bg-on-primary-fixed rounded-lg p-12 text-center relative overflow-hidden reveal">
-<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(#ffffff 0.5px, transparent 0.5px); background-size: 20px 20px;"></div>
-<h2 class="text-4xl font-extrabold text-white mb-6 relative z-10">¿Listo para transformar tu negocio?</h2>
-<p class="text-primary-fixed text-lg mb-10 max-w-2xl mx-auto relative z-10">Únete a cientos de empresas que ya confían en Pudú Tecnología para potenciar sus operaciones diarias.</p>
-<div class="relative z-10">
-<button class="px-10 py-4 bg-primary text-on-primary rounded-full font-black text-xl hover:scale-105 transition-transform shadow-2xl">Empezar ahora gratis</button>
-</div>
+<!-- CTA + Contacto -->
+<section id="contacto" class="max-w-7xl mx-auto px-6 py-24 mb-12">
+<div class="bg-on-primary-fixed rounded-2xl overflow-hidden relative">
+  <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(#ffffff 0.5px, transparent 0.5px); background-size: 20px 20px;"></div>
+  <div class="grid grid-cols-1 lg:grid-cols-2 relative z-10">
+
+    <!-- Lado izquierdo: texto CTA -->
+    <div class="p-12 flex flex-col justify-center reveal">
+      <h2 class="text-4xl font-extrabold text-white mb-6 leading-tight">¿Listo para transformar tu negocio?</h2>
+      <p class="text-primary-fixed text-lg mb-8 leading-relaxed">Únete a cientos de empresas que ya confían en Pudú Tecnología para potenciar sus operaciones diarias.</p>
+      <ul class="space-y-3 mb-8">
+        <li class="flex items-center space-x-3 text-primary-fixed">
+          <span class="material-symbols-outlined text-primary-container" style="font-variation-settings:'FILL' 1;">check_circle</span>
+          <span>Sin tarjeta de crédito requerida</span>
+        </li>
+        <li class="flex items-center space-x-3 text-primary-fixed">
+          <span class="material-symbols-outlined text-primary-container" style="font-variation-settings:'FILL' 1;">check_circle</span>
+          <span>Configuración en menos de 10 minutos</span>
+        </li>
+        <li class="flex items-center space-x-3 text-primary-fixed">
+          <span class="material-symbols-outlined text-primary-container" style="font-variation-settings:'FILL' 1;">check_circle</span>
+          <span>Soporte en español incluido</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Lado derecho: formulario -->
+    <div class="p-12 bg-white/10 backdrop-blur-sm flex flex-col justify-center reveal">
+      <h3 class="text-2xl font-bold text-white mb-6">Contáctanos</h3>
+      <form id="contact-form" class="space-y-4" onsubmit="submitContact(event)">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-semibold text-primary-fixed mb-1" for="c-nombre">Nombre</label>
+            <input id="c-nombre" type="text" required placeholder="Tu nombre"
+              class="w-full px-4 py-3 rounded-xl bg-white/15 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/40 transition-all"/>
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-primary-fixed mb-1" for="c-empresa">Empresa</label>
+            <input id="c-empresa" type="text" placeholder="Tu empresa"
+              class="w-full px-4 py-3 rounded-xl bg-white/15 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/40 transition-all"/>
+          </div>
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-primary-fixed mb-1" for="c-email">Correo electrónico</label>
+          <input id="c-email" type="email" required placeholder="tu@correo.com"
+            class="w-full px-4 py-3 rounded-xl bg-white/15 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/40 transition-all"/>
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-primary-fixed mb-1" for="c-telefono">Teléfono (opcional)</label>
+          <input id="c-telefono" type="tel" placeholder="+56 9 1234 5678"
+            class="w-full px-4 py-3 rounded-xl bg-white/15 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/40 transition-all"/>
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-primary-fixed mb-1" for="c-mensaje">Mensaje</label>
+          <textarea id="c-mensaje" required rows="3" placeholder="¿En qué podemos ayudarte?"
+            class="w-full px-4 py-3 rounded-xl bg-white/15 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/40 transition-all resize-none"></textarea>
+        </div>
+        <button type="submit"
+          class="w-full py-4 bg-primary text-on-primary rounded-full font-bold text-lg hover:opacity-90 hover:scale-[1.02] transition-all shadow-xl">
+          Enviar mensaje
+        </button>
+        <div id="contact-success" class="hidden text-center py-3 px-4 bg-green-400/20 border border-green-400/30 rounded-xl text-green-200 font-semibold">
+          ¡Mensaje enviado! Te contactaremos pronto.
+        </div>
+      </form>
+    </div>
+
+  </div>
 </div>
 </section>
 </main>
@@ -401,6 +456,15 @@
 </footer>
 
 <script>
+  // ── Contact form (demo — sin backend) ─────────────────────
+  function submitContact(e) {
+    e.preventDefault();
+    const success = document.getElementById('contact-success');
+    success.classList.remove('hidden');
+    e.target.reset();
+    setTimeout(() => success.classList.add('hidden'), 6000);
+  }
+
   // ── Scroll Reveal ──────────────────────────────────────────
   const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -440,5 +504,7 @@
     }
   });
 </script></body></html>
+
+
 
 
