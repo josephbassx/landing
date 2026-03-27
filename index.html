@@ -125,29 +125,34 @@
 </head>
 <body class="text-on-background selection:bg-primary-container selection:text-on-primary-container">
 <!-- TopAppBar -->
-<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md border-b border-purple-100 dark:border-purple-900/50 shadow-sm font-manrope antialiased">
-<div class="flex justify-between items-center w-full px-4 sm:px-6 py-4 max-w-7xl mx-auto">
-  <a href="#" class="text-xl sm:text-2xl font-black tracking-tighter text-purple-700">Pudú Tecnología</a>
-  <div class="hidden md:flex space-x-8">
-    <a class="text-slate-600 font-medium hover:text-purple-600 transition-colors duration-200" href="#funciones">Funciones</a>
-    <a class="text-slate-600 font-medium hover:text-purple-600 transition-colors duration-200" href="#planes">Planes</a>
-    <a class="text-slate-600 font-medium hover:text-purple-600 transition-colors duration-200" href="#contacto">Contacto</a>
+<nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm font-manrope antialiased">
+<div class="flex justify-between items-center w-full px-4 sm:px-6 py-3 max-w-7xl mx-auto">
+  <a href="#" class="text-lg sm:text-xl font-black tracking-tight text-slate-900">Pudú<span class="text-primary">Tecnología</span></a>
+  <div class="hidden md:flex items-center space-x-6">
+    <a class="text-slate-600 text-sm font-medium hover:text-primary transition-colors duration-200" href="#productos">Productos</a>
+    <a class="text-slate-600 text-sm font-medium hover:text-primary transition-colors duration-200" href="#caracteristicas">Características</a>
+    <a class="text-slate-600 text-sm font-medium hover:text-primary transition-colors duration-200" href="#planes">Planes</a>
+    <a class="text-slate-600 text-sm font-medium hover:text-primary transition-colors duration-200" href="#contacto">Contacto</a>
   </div>
   <div class="flex items-center gap-3">
-    <a href="https://rextech.cl/login" class="hidden sm:inline-flex px-5 py-2 bg-primary text-on-primary rounded-full font-bold hover:opacity-90 transition-opacity text-sm">Iniciar Sesión</a>
+    <a href="https://rextech.cl/login" class="hidden sm:inline-flex items-center gap-1.5 px-5 py-2 bg-primary text-white rounded-full font-bold hover:opacity-90 transition-opacity text-sm shadow-md shadow-primary/25">
+      <span class="material-symbols-outlined text-base" style="font-size:16px">login</span>
+      Solicitar Demo
+    </a>
     <button id="menu-btn" class="md:hidden flex flex-col justify-center items-center w-9 h-9 rounded-lg hover:bg-purple-100 transition-colors" aria-label="Abrir menú">
-      <span class="block w-5 h-0.5 bg-purple-700 mb-1 transition-all duration-300" id="bar1"></span>
-      <span class="block w-5 h-0.5 bg-purple-700 mb-1 transition-all duration-300" id="bar2"></span>
-      <span class="block w-5 h-0.5 bg-purple-700 transition-all duration-300" id="bar3"></span>
+      <span class="block w-5 h-0.5 bg-slate-700 mb-1 transition-all duration-300" id="bar1"></span>
+      <span class="block w-5 h-0.5 bg-slate-700 mb-1 transition-all duration-300" id="bar2"></span>
+      <span class="block w-5 h-0.5 bg-slate-700 transition-all duration-300" id="bar3"></span>
     </button>
   </div>
 </div>
-<div id="mobile-menu" class="hidden md:hidden border-t border-purple-100 bg-white/95 backdrop-blur-md px-5 py-4 flex flex-col space-y-1">
-  <a class="py-3 px-2 text-slate-700 font-semibold rounded-lg hover:bg-purple-50 hover:text-purple-700 transition-colors" href="#funciones">Funciones</a>
-  <a class="py-3 px-2 text-slate-700 font-semibold rounded-lg hover:bg-purple-50 hover:text-purple-700 transition-colors" href="#planes">Planes</a>
-  <a class="py-3 px-2 text-slate-700 font-semibold rounded-lg hover:bg-purple-50 hover:text-purple-700 transition-colors" href="#contacto">Contacto</a>
-  <div class="pt-2 border-t border-purple-100">
-    <a href="https://rextech.cl/login" class="block w-full text-center py-3 bg-primary text-on-primary rounded-full font-bold hover:opacity-90 transition-opacity">Iniciar Sesión</a>
+<div id="mobile-menu" class="hidden md:hidden border-t border-slate-100 bg-white/95 backdrop-blur-md px-5 py-4 flex flex-col space-y-1">
+  <a class="py-3 px-2 text-slate-700 font-semibold rounded-lg hover:bg-purple-50 hover:text-primary transition-colors" href="#productos">Productos</a>
+  <a class="py-3 px-2 text-slate-700 font-semibold rounded-lg hover:bg-purple-50 hover:text-primary transition-colors" href="#caracteristicas">Características</a>
+  <a class="py-3 px-2 text-slate-700 font-semibold rounded-lg hover:bg-purple-50 hover:text-primary transition-colors" href="#planes">Planes</a>
+  <a class="py-3 px-2 text-slate-700 font-semibold rounded-lg hover:bg-purple-50 hover:text-primary transition-colors" href="#contacto">Contacto</a>
+  <div class="pt-2 border-t border-slate-100">
+    <a href="https://rextech.cl/login" class="block w-full text-center py-3 bg-primary text-white rounded-full font-bold hover:opacity-90 transition-opacity">Solicitar Demo</a>
   </div>
 </div>
 </nav>
@@ -187,7 +192,118 @@
 <img id="dashboard-img" class="w-full aspect-video object-cover float-anim" alt="Interfaz del sistema POS Pudú" src="assets/img/dashboard.jpg"/>
 </div>
 </section>
-<!-- Funciones (Bento Grid Style) --><section id="funciones" class="max-w-7xl mx-auto px-6 py-12 md:py-24">
+<!-- Soluciones / Productos -->
+<section id="productos" class="max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-24">
+  <div class="text-center mb-12 reveal">
+    <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight mb-3">Soluciones para <span class="text-primary">cada negocio</span></h2>
+    <p class="text-on-surface-variant text-lg max-w-xl mx-auto">Tres productos diseñados para cubrir las necesidades específicas de restaurantes, comercios y empresas.</p>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="bg-white rounded-2xl border border-slate-100 p-7 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 reveal">
+      <div class="w-12 h-12 bg-primary-container rounded-xl flex items-center justify-center mb-5"><span class="material-symbols-outlined text-primary text-2xl">restaurant</span></div>
+      <h3 class="text-lg font-bold mb-1 text-slate-900">PUDU Gourmet</h3>
+      <p class="text-xs text-primary font-semibold uppercase tracking-widest mb-4">Para Restaurantes</p>
+      <ul class="space-y-2.5">
+        <li class="flex items-start gap-2 text-sm text-slate-600"><span class="material-symbols-outlined text-primary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>Control de mesas</li>
+        <li class="flex items-start gap-2 text-sm text-slate-600"><span class="material-symbols-outlined text-primary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>Comandas digitales</li>
+        <li class="flex items-start gap-2 text-sm text-slate-600"><span class="material-symbols-outlined text-primary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>Registro de propinas</li>
+        <li class="flex items-start gap-2 text-sm text-slate-600"><span class="material-symbols-outlined text-primary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>Pre-cuentas y cuentas por cobrar</li>
+        <li class="flex items-start gap-2 text-sm text-slate-600"><span class="material-symbols-outlined text-primary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>Gestión de pedidos</li>
+        <li class="flex items-start gap-2 text-sm text-slate-600"><span class="material-symbols-outlined text-primary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>Optimización de atención</li>
+      </ul>
+    </div>
+    <div class="bg-primary rounded-2xl p-7 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative reveal">
+      <div class="absolute top-0 right-7 -translate-y-1/2 bg-white text-primary px-3 py-1 rounded-full text-xs font-black uppercase tracking-widest shadow">Más popular</div>
+      <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mb-5"><span class="material-symbols-outlined text-white text-2xl">point_of_sale</span></div>
+      <h3 class="text-lg font-bold mb-1 text-white">PUDU Punto de Venta</h3>
+      <p class="text-xs text-primary-container font-semibold uppercase tracking-widest mb-4">POS Comercial</p>
+      <ul class="space-y-2.5">
+        <li class="flex items-start gap-2 text-sm text-white/90"><span class="material-symbols-outlined text-primary-container text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>Control de caja</li>
+        <li class="flex items-start gap-2 text-sm text-white/90"><span class="material-symbols-outlined text-primary-container text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>Boletas y facturas electrónicas</li>
+        <li class="flex items-start gap-2 text-sm text-white/90"><span class="material-symbols-outlined text-primary-container text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>Creación de vendedores</li>
+        <li class="flex items-start gap-2 text-sm text-white/90"><span class="material-symbols-outlined text-primary-container text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>Cuentas por cobrar</li>
+        <li class="flex items-start gap-2 text-sm text-white/90"><span class="material-symbols-outlined text-primary-container text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>Ventas rápidas e intuitivas</li>
+      </ul>
+    </div>
+    <div class="bg-white rounded-2xl border border-slate-100 p-7 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 reveal">
+      <div class="w-12 h-12 bg-secondary-container rounded-xl flex items-center justify-center mb-5"><span class="material-symbols-outlined text-secondary text-2xl">receipt_long</span></div>
+      <h3 class="text-lg font-bold mb-1 text-slate-900">PUDU Factura</h3>
+      <p class="text-xs text-secondary font-semibold uppercase tracking-widest mb-4">Administrativo</p>
+      <ul class="space-y-2.5">
+        <li class="flex items-start gap-2 text-sm text-slate-600"><span class="material-symbols-outlined text-secondary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>Gestión administrativa integral</li>
+        <li class="flex items-start gap-2 text-sm text-slate-600"><span class="material-symbols-outlined text-secondary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>Documentos tributarios electrónicos</li>
+        <li class="flex items-start gap-2 text-sm text-slate-600"><span class="material-symbols-outlined text-secondary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>Control de clientes y ventas</li>
+        <li class="flex items-start gap-2 text-sm text-slate-600"><span class="material-symbols-outlined text-secondary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>Ideal para empresas no gastronómicas</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- Características Destacadas -->
+<section id="caracteristicas" class="bg-slate-50/80 py-12 md:py-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-12 reveal">
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight mb-3">Características <span class="text-primary">destacadas</span></h2>
+      <p class="text-on-surface-variant text-lg">Tecnología de punta para que tu negocio funcione sin interrupciones.</p>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+      <div class="bg-white rounded-2xl p-5 flex flex-col items-center text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 reveal">
+        <div class="w-12 h-12 bg-primary-container rounded-xl flex items-center justify-center mb-3"><span class="material-symbols-outlined text-primary text-2xl">cloud</span></div>
+        <h4 class="font-bold text-sm text-slate-800 mb-1">En la nube</h4>
+        <p class="text-xs text-slate-500 leading-relaxed">Acceso desde cualquier dispositivo, en cualquier lugar</p>
+      </div>
+      <div class="bg-white rounded-2xl p-5 flex flex-col items-center text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 reveal">
+        <div class="w-12 h-12 bg-primary-container rounded-xl flex items-center justify-center mb-3"><span class="material-symbols-outlined text-primary text-2xl">store</span></div>
+        <h4 class="font-bold text-sm text-slate-800 mb-1">Multi-sucursal</h4>
+        <p class="text-xs text-slate-500 leading-relaxed">Gestiona múltiples sucursales desde un solo panel</p>
+      </div>
+      <div class="bg-white rounded-2xl p-5 flex flex-col items-center text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 reveal">
+        <div class="w-12 h-12 bg-primary-container rounded-xl flex items-center justify-center mb-3"><span class="material-symbols-outlined text-primary text-2xl">warehouse</span></div>
+        <h4 class="font-bold text-sm text-slate-800 mb-1">Multi-bodega</h4>
+        <p class="text-xs text-slate-500 leading-relaxed">Controla inventarios en múltiples bodegas</p>
+      </div>
+      <div class="bg-white rounded-2xl p-5 flex flex-col items-center text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 reveal">
+        <div class="w-12 h-12 bg-primary-container rounded-xl flex items-center justify-center mb-3"><span class="material-symbols-outlined text-primary text-2xl">bolt</span></div>
+        <h4 class="font-bold text-sm text-slate-800 mb-1">Alta velocidad</h4>
+        <p class="text-xs text-slate-500 leading-relaxed">Procesamiento ultra-rápido para operaciones fluidas</p>
+      </div>
+      <div class="bg-white rounded-2xl p-5 flex flex-col items-center text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 reveal col-span-2 sm:col-span-1">
+        <div class="w-12 h-12 bg-primary-container rounded-xl flex items-center justify-center mb-3"><span class="material-symbols-outlined text-primary text-2xl">touch_app</span></div>
+        <h4 class="font-bold text-sm text-slate-800 mb-1">Interfaz intuitiva</h4>
+        <p class="text-xs text-slate-500 leading-relaxed">Fácil de usar, sin curva de aprendizaje</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Módulo de Contingencia -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-20">
+  <div class="bg-gradient-to-br from-[#5b21b6] to-[#a413ec] rounded-3xl p-8 md:p-12 relative overflow-hidden reveal">
+    <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(#ffffff 0.5px, transparent 0.5px); background-size: 20px 20px;"></div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center relative z-10">
+      <div>
+        <div class="inline-flex items-center gap-2 bg-white/15 px-3 py-1 rounded-full mb-5">
+          <span class="material-symbols-outlined text-yellow-300 text-base">warning</span>
+          <span class="text-white text-xs font-bold uppercase tracking-widest">Módulo de Contingencia</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-4 leading-tight">Sigue vendiendo incluso <span class="text-yellow-300">sin Internet</span></h2>
+        <p class="text-white/80 text-base leading-relaxed">Nuestro módulo de contingencia permite que tu negocio continúe operando normalmente durante cortes de conexión. Cuando se restablece, la sincronización es automática.</p>
+      </div>
+      <div class="space-y-4">
+        <div class="flex items-start gap-4 bg-white/10 rounded-2xl p-4 backdrop-blur-sm">
+          <div class="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-xl">wifi_off</span></div>
+          <div><h4 class="font-bold text-white mb-1">Operación offline</h4><p class="text-white/70 text-sm">Continúa vendiendo sin conexión a Internet</p></div>
+        </div>
+        <div class="flex items-start gap-4 bg-white/10 rounded-2xl p-4 backdrop-blur-sm">
+          <div class="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-xl">sync</span></div>
+          <div><h4 class="font-bold text-white mb-1">Sincronización automática</h4><p class="text-white/70 text-sm">Los datos se sincronizan al volver la conexión</p></div>
+        </div>
+        <div class="flex items-start gap-4 bg-white/10 rounded-2xl p-4 backdrop-blur-sm">
+          <div class="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-xl">shield</span></div>
+          <div><h4 class="font-bold text-white mb-1">Sin pérdida de datos</h4><p class="text-white/70 text-sm">Toda la información queda respaldada</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- Funciones (Bento Grid Style) --><section id="funciones" class="max-w-7xl mx-auto px-6 py-12 md:py-24">
 <div class="text-center mb-16 reveal">
 <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight mb-4">Todo lo que necesitas para crecer</h2>
 <div class="h-1.5 w-24 bg-primary mx-auto rounded-full"></div>
@@ -547,6 +663,8 @@
     }
   });
 </script></body></html>
+
+
 
 
 
